@@ -7,7 +7,8 @@ int printColorMap() {
     int i = 0, j = 0;
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
-            std::cout << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
+            std::cout << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[j] << "\n";
+            // above code has a bug replaced it with std::cout << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[j] << "\n";
         }
     }
     return i * j;
@@ -18,4 +19,5 @@ void testPrintColorMap() {
     int result = printColorMap();
     assert(result == 25);
     std::cout << "All is well (maybe!)\n";
+
 }
