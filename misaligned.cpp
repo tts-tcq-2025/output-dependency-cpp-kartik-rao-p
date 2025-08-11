@@ -18,4 +18,6 @@ void testPrintColorMap() {
     int result = printColorMap();
     assert(result == 25);
     std::cout << "All is well (maybe!)\n";
+
 }
+
